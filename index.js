@@ -10,3 +10,7 @@ function nameToAttributes(collection) {
   }
   )
 }
+
+function attributesToPhrase(collection) {
+  return collection.map(object => `${object.name} is from ${object.hometown}`)
+}
