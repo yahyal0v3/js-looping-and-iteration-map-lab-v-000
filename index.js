@@ -4,8 +4,8 @@ function lowerCaseDrivers(collection) {
 }
 
 function nameToAttributes(collection) {
-  return collection.map(function (element) {
+  return collection.map(element =>
     let arrayName = element.split(" ")
     return {firstName: arrayName[0], lastName: arrayName[1]}
-  })
+  )
 }
